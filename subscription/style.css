@@ -1,12 +1,45 @@
 * {
   margin: 0;
-  background-color: #e5edf7;
+  background-color: var(--blue-light-color);
+  list-style-type: none;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.widget-sign_up {
-  background-color: #2bb3b1;
+:root {
+  --green-light-color: #bbdf37;
+  --blue-light-color: #e5edf7;
+  --teal-dark-color: #2bb3b1;
+  --teal-light-color: #4abebd;
+  --weak-opacity: 50%;
+  --white: white;
+  --widget-sub-width: 7rem;
 }
 
-.widget-explanation {
-  background-color: #4abebd;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.widget-main {
+  width: auto;
+}
+
+.widget-sub {
+  width: var(--widget-sub-width);
+}
+
+#main-top {
+  background-color: var(--white);
+}
+#main-bottom {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+#sub-left {
+  background-color: var(--teal-dark-color);
+}
+#sub-right {
+  background-color: var(--teal-light-color);
 }
