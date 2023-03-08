@@ -5,6 +5,10 @@
   font-family: "Courier New", Courier, monospace;
 }
 
+body{
+  background-color: transparent;
+}
+
 :root {
   --green-light-color: #bbdf37;
   --blue-light-color: #e5edf7;
@@ -13,6 +17,7 @@
   --weak-opacity: 50%;
   --white: white;
   --widget-sub-width: 7rem;
+  --
 }
 
 .container {
@@ -20,16 +25,31 @@
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+
+  width: auto;
+  height: 100%;
 }
 .widget-main {
-  width: auto;
+}
+.widget-main>*{
+  background-color: transparent;
 }
 
 .widget-sub {
   width: var(--widget-sub-width);
 }
 
+.widget-sub>*{
+  background-color: transparent;
+}
+
+.widget-padding{
+
+}
+
 #main-top {
+  width: calc(var(--widget-sub-width) * 2);
+
   background-color: var(--white);
 }
 #main-bottom {
